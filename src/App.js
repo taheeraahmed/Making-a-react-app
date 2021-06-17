@@ -12,7 +12,9 @@ function App() {
           </h1>
           <Info/>
         </header>
-        <Navbar/>
+        <main className= "main">
+          <Navbar/>
+        </main>
       </div>
   );
 }

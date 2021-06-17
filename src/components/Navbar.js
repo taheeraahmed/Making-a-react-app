@@ -6,6 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { BorderBottom } from '@material-ui/icons';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,12 +53,17 @@ function LinkTab(props) {
   );
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
-    flexGrow: 1,
-    backgroundColor: '#ffffff',
+    background: 'white',
   },
-}));
+  indicator: {
+    background: "none"
+  },
+  tabs: {
+    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+  }
+});
 
 export default function Navbar() {
   const classes = useStyles();
@@ -71,6 +77,8 @@ export default function Navbar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Tabs
+          className={classes.tabs}
+          classes={{ indicator: classes.indicator }}
           variant="fullWidth"
           value={value}
           onChange={handleChange}

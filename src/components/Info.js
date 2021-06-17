@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
 import HomeIcon from '@material-ui/icons/Home';
 import SchoolIcon from '@material-ui/icons/School';
@@ -24,7 +23,9 @@ export default function Info() {
 
   return (
     <div className={classes.root}>
-        <Chip avatar={<HomeIcon/>} label="Trondheim/Jessheim" />
+        <Chip 
+            avatar={<HomeIcon style={{ color: "#black" }}/>} 
+            label="Trondheim/Jessheim" />
         <Chip avatar={<SchoolIcon/>} label="Datateknologi, Norges Teknisk og Naturvitenskapelig Universitet" />
         <Chip avatar={<GitHubIcon/>} label="@taheeraahmed" component="a" href="https://github.com/taheeraahmed" clickable />
         <Chip avatar={<MailIcon/>} label="taheera@hotmail.com" component="a" href="mailto:taheera@hotmail.com" clickable />
