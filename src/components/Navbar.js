@@ -91,16 +91,24 @@ export default function Navbar() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Page One
+        <h2>
+          Om meg
+        </h2>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Page Two
+        <h2>
+          CV
+        </h2>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Page Three
+        <h2>
+          Prosjekter
+        </h2>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Page Three
+        <h2>
+          Fordi jeg kan
+        </h2>
       </TabPanel>
     </div>
   );
