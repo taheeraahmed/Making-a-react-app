@@ -7,12 +7,15 @@
   display: flex;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  padding: 10vh;
+  padding: 5vh 10vh 5vh 10vh;
   margin: auto;
 }
 .main {
   margin: auto;
   width:80%;
+}
+.footer {
+  height:3rem;
 }
 
 h1 {
@@ -20,4 +23,15 @@ h1 {
   background: -webkit-linear-gradient(#FE6B8B 30%, #FF8E53 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 50px;
+  display:inline-block;
+  background: 
+   linear-gradient(to left, #FE6B8B 30%, #FF8E53 90%),
+   linear-gradient(to left,  #FE6B8B 30%, #FF8E53 90%);
+  background-size:100% 6px;
+  background-position:bottom 0 left 0,bottom 0px left 0;
+  background-repeat:no-repeat;
 }
