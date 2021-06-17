@@ -1,19 +1,19 @@
 import './App.css';
+import Button from '@material-ui/core/Button';
+import Navbar from './components/Navbar';
+import Info from './components/Info';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Hei, jeg heter Taheera Ahmed
-        </h1>
-        <p>
-          Jeg besemte meg for å lage en nettside fordi jeg kjeder meg
-          og 
-          trengte noe å gjøre i sommerferien, uten å dø på innsiden
-        </p>
-      </header>
-    </div>
+      <div className="App">
+        <header className="header">
+          <h1>
+            Taheera Ahmed
+          </h1>
+          <Info/>
+        </header>
+        <Navbar/>
+      </div>
   );
 }
 

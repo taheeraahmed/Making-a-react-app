@@ -2,26 +2,21 @@
   text-align: center;
 }
 
-.App-header {
+.header {
   background-color: #7a7a7a;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10vh;
+  width: 70%;
+  margin: auto;
 }
-
-.App-link {
-  color: #61dafb;
+.body{
+  background-color: #7a7a7a;
+  height: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  margin: auto;
+  width: 70%;
 }
