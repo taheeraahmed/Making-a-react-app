@@ -7,6 +7,8 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { BorderBottom } from '@material-ui/icons';
+import JustMe from '../images/pb.jpg';
+import Paper from '@material-ui/core/Paper';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -58,7 +60,10 @@ const useStyles = makeStyles({
     background: 'white',
   },
   indicator: {
-    background: "none"
+    border: 'double 2px transparent',
+    backgroundImage: 'linear-gradient(transparent, transparent), radial-gradient(circle at top left, #FF8E53 30%,#FE6B8B 90% )',
+    backgroundOrigin: 'border-box',
+    backgroundClip: 'content-box, border-box',
   },
   tabs: {
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
@@ -83,6 +88,7 @@ export default function Navbar() {
           value={value}
           onChange={handleChange}
           aria-label="nav tabs example"
+          elevation={0}
         >
           <LinkTab label="Om meg" href="/drafts" {...a11yProps(0)} />
           <LinkTab label="CV" href="/trash" {...a11yProps(1)} />
@@ -94,6 +100,10 @@ export default function Navbar() {
         <h2>
           Om meg
         </h2>
+        <Paper elevation={3}>
+          <img src={JustMe} width="200"alt="cam"/>
+          <p>Heisann</p>
+        </Paper>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <h2>
