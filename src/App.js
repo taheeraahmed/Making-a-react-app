@@ -1,5 +1,4 @@
 import './App.css';
-import Button from '@material-ui/core/Button';
 import Navbar from './components/Navbar';
 import Info from './components/Info';
 
@@ -15,6 +14,9 @@ function App() {
         <main className= "main">
           <Navbar/>
         </main>
+        <footer className="footer">
+          Dette skal være en footer
+        </footer>
       </div>
   );
 }
