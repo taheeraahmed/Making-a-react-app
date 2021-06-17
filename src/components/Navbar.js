@@ -6,9 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import { BorderBottom } from '@material-ui/icons';
 import JustMe from '../images/pb.jpg';
-import Paper from '@material-ui/core/Paper';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -62,11 +60,10 @@ const useStyles = makeStyles({
   indicator: {
     border: 'double 2px transparent',
     backgroundImage: 'linear-gradient(transparent, transparent), radial-gradient(circle at top left, #FF8E53 30%,#FE6B8B 90% )',
-    backgroundOrigin: 'border-box',
-    backgroundClip: 'content-box, border-box',
   },
   tabs: {
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+    fontSize: 20,
   }
 });
 
@@ -100,10 +97,30 @@ export default function Navbar() {
         <h2>
           Om meg
         </h2>
-        <Paper elevation={3}>
-          <img src={JustMe} width="200"alt="cam"/>
-          <p>Heisann</p>
-        </Paper>
+        <Box display="flex" p={1} >
+          <Box p={1} width="33%">
+            <img src={JustMe} width="300"alt="cam"/>
+          </Box>
+          <Box p={1} width="33%" >
+            <Typography paragraph = {true}>
+              Heisann, 
+              jeg heter Taheera (uttales Tahira) og jeg er en 24 år gammel jente fra Jessheim. 
+              For øyeblikket studerer jeg datateknologi på NTNU og begynner i 4.klasse
+            </Typography>
+            <Typography paragraph = {true}>
+              Jeg kjeder meg denne sommeren. Derfor bestemte jeg meg for å lage en aldri så liten nettside for å
+              prøve å lære meg hvordan MaterialUI og React faktisk fungerer. Ville sagt jeg delvis
+              skjønner meg litt mer på det
+            </Typography>
+            <Typography paragraph = {true}>
+              Obviously synes jeg gradienter er veldig kule. Bruker det på alt her
+            </Typography>
+          </Box>
+          <Box p={1} width="33%">
+            <Typography>
+            </Typography>
+          </Box>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <h2>
