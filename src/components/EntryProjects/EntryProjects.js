@@ -2,9 +2,15 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import MyLink from '../Link/Link';
+import ProjectChips from '../ProjectChips/ProjectChips';
+import { Box } from '@material-ui/core';
 
 export class EntryProjects extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = { link : 'Frarthur' }
+    }
     render(){
         return (
             <div>
@@ -12,7 +18,7 @@ export class EntryProjects extends React.Component{
                     style = {{
                         height:150,
                         padding:10,
-                        marginTop:30,
+                        marginTop:20,
                         paddingLeft:10,
                     }}
                     square>
@@ -33,9 +39,22 @@ export class EntryProjects extends React.Component{
                                 {this.props.title}
                             </Typography>
                             <Typography variant ="body2" paragraph={true}>
-                                <Link href={this.props.linkPath} >
+                                <MyLink href={this.props.linkPath} >
                                     {this.props.linkName}
-                                </Link>
+                                </MyLink>
+                                <Box display='flex'
+                                    flexWrap="wrap"
+                                    alignContent="flex-start">
+                                        <Box pr={0.5}>
+                                            <ProjectChips name="Python"/>
+                                        </Box>
+                                        <Box pr={0.5}>
+                                            <ProjectChips name="Kunstig Intelligens"/>
+                                        </Box>   
+                                </Box>
+                                {/* aListOfStuff =  ['Python', 'Kunstig Intelligens', 'NLP', 'TensorFlow']}
+                                {/* <ProjectChips list={aListOfStuff}> */}
+                                
                             </Typography>
                             <Typography variant ="body">
                                 {this.props.description}

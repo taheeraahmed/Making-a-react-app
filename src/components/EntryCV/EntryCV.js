@@ -13,9 +13,8 @@ export class EntryCV extends React.Component{
             <Paper 
                 variant="outlined"
                 style = {{
-                    padding:20,
+                    padding:25,
                     marginTop:10,
-                    paddingLeft:10,
                 }}
                 square>
             <Grid 
