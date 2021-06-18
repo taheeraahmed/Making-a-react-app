@@ -224,10 +224,26 @@ export default function Navbar() {
         <Typography variant="h2" >
             Prosjekter
         </Typography>
-          <EntryProjects/>
-          <EntryProjects/>
-          <EntryProjects/>
-          <EntryProjects/>
+          <EntryProjects 
+            title = "Chatbot" 
+            description="Laget tre forskjellige chatbotter i Python, hvorav en av dem bruker et nevralt nett for å danne en setning" 
+            linkName="Github repository"
+            linkPath="https://github.com/taheeraahmed/Chat-bots"/>
+          <EntryProjects 
+            title = "Nevralt nettverk" 
+            description="Laget et eget nevralt nettverk uten å bruke TensorFlow" 
+            linkName="Github repository"
+            linkPath="https://github.com/taheeraahmed/Neural-Network"/>
+          <EntryProjects 
+            title = "Shell" 
+            description="Implementerte en relativt simpelt shell i C som kan gjøre basic operasjoner som cd og ls" 
+            linkName="Github repository"
+            linkPath="https://github.com/taheeraahmed/Shell-Implementation"/>
+          <EntryProjects 
+            title = "K-means" 
+            description="Implementerte K means algoritmen (i Python) som brukes for klassifisering av ukjent datapunkter" 
+            linkName="Github repository"
+            linkPath="https://github.com/taheeraahmed/Classification-Decision-Tree-KNN"/>
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Typography variant="h2">
