@@ -11,6 +11,11 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid'
 import StorageOutlinedIcon from '@material-ui/icons/StorageOutlined';
 import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
+import LocalPizzaOutlinedIcon from '@material-ui/icons/LocalPizzaOutlined';
+import LocalHospitalOutlinedIcon from '@material-ui/icons/LocalHospitalOutlined';
+import LocalAirportOutlinedIcon from '@material-ui/icons/LocalAirportOutlined';
+import FitnessCenterOutlinedIcon from '@material-ui/icons/FitnessCenterOutlined';
+import { ListTech } from './ListTech/ListTech.js';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -79,7 +84,7 @@ const useStyles = makeStyles({
   },
   paper: {
     padding:10,
-    marginTop:5,
+    marginTop:10,
     paddingLeft:10,
   },
   backgroundIcon: {
@@ -154,6 +159,13 @@ export default function Navbar() {
           paragraph={true}
           variant="h3" 
           className={ classes.h3 }>
+          &gt; Tekniske kunnskaper
+        </Typography>
+        <ListTech></ListTech>
+        <Typography 
+          paragraph={true}
+          variant="h3" 
+          className={ classes.h3 }>
           &gt; Utdannelse
         </Typography>
         <Paper 
@@ -167,7 +179,7 @@ export default function Navbar() {
           <Grid item xs={1}>
                 <StorageOutlinedIcon style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
            </Grid>
-            <Grid item xs={3}
+          <Grid item xs={4}
               alignItems="center"
               justify="center">
               <Typography variant="overline"
@@ -182,7 +194,7 @@ export default function Navbar() {
                 </Box>
               </Typography>
             </Grid>
-            <Grid item xs={8}
+          <Grid item xs={7}
               alignItems="center"
               justify="center">
               <Typography>
@@ -203,7 +215,7 @@ export default function Navbar() {
           <Grid item xs={1}>
                 <SchoolOutlinedIcon style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
            </Grid>
-            <Grid item xs={3}
+            <Grid item xs={4}
               alignItems="center"
               justify="center">
               <Typography variant="overline"
@@ -218,7 +230,7 @@ export default function Navbar() {
                 </Box>
               </Typography>
             </Grid>
-            <Grid item xs={8}
+            <Grid item xs={7}
               alignItems="center"
               justify="center">
               <Typography>
@@ -233,6 +245,148 @@ export default function Navbar() {
           className={ classes.h3 }>
           &gt; Jobberfaringer
         </Typography>
+        <Paper 
+          variant="outlined"
+          className = {classes.paper} 
+          square>
+          <Grid 
+            alignItems="center"
+            justify="center"
+            container spacing={1}>
+          <Grid item xs={1}>
+                <LocalPizzaOutlinedIcon style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
+           </Grid>
+            <Grid item xs={4}
+              alignItems="center"
+              justify="center">
+              <Typography variant="overline"
+                >
+                  <Box>
+                    Sjåfør, Peppes Pizza
+                  </Box>
+              </Typography>
+              <Typography variant="overline">
+                <Box>
+                  Aug 2016 - Aug 2021
+                </Box>
+              </Typography>
+            </Grid>
+            <Grid item xs={7}
+              alignItems="center"
+              justify="center">
+              <Typography>
+                Her leverte jeg glede, i form av pizza, på døren til mange på Jessheim! 
+                Hadde deltidsstilling som sjåfør med andre ord og jobber her hovedsakelig i sommerferiene.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Paper 
+          variant="outlined"
+          className = {classes.paper} 
+          square>
+          <Grid 
+            alignItems="center"
+            justify="center"
+            container spacing={1}>
+          <Grid item xs={1}>
+                <LocalHospitalOutlinedIcon  style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
+           </Grid>
+            <Grid item xs={4}
+              alignItems="center"
+              justify="center">
+              <Typography variant="overline"
+                >
+                  <Box>
+                    Medic, Forsvaret
+                  </Box>
+              </Typography>
+              <Typography variant="overline">
+                <Box>
+                  Aug 2015- Aug 2016
+                </Box>
+              </Typography>
+            </Grid>
+            <Grid item xs={7}
+              alignItems="center"
+              justify="center">
+              <Typography>
+              Fullførte førstegangstjenesten min på Madlaleiren. I løpet av denne tiden lærte jeg grunnleggende førstehjelp. 
+              I tillegg hjalp jeg til på sykestuen på Madla samt. diverse militærøvelser i regi av Sjøforsvarets befalsskole.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Paper 
+          variant="outlined"
+          className = {classes.paper} 
+          square>
+          <Grid 
+            alignItems="center"
+            justify="center"
+            container spacing={1}>
+          <Grid item xs={1}>
+                <LocalAirportOutlinedIcon  style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
+           </Grid>
+            <Grid item xs={4}
+              alignItems="center"
+              justify="center">
+              <Typography variant="overline"
+                >
+                  <Box>
+                    Servicemedarbeider, SSP
+                  </Box>
+              </Typography>
+              <Typography variant="overline">
+                <Box>
+                  Feb 2014- Jun 2015
+                </Box>
+              </Typography>
+            </Grid>
+            <Grid item xs={7}
+              alignItems="center"
+              justify="center">
+              <Typography>
+                Jobbet på Pizza Hut på Oslo Lufthavn. Her hadde jeg ansvar for å både rydde etter besøkende, lage pizza mm.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Paper 
+          variant="outlined"
+          className = {classes.paper} 
+          square>
+          <Grid 
+            alignItems="center"
+            justify="center"
+            container spacing={1}>
+          <Grid item xs={1}>
+                <FitnessCenterOutlinedIcon   style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
+           </Grid>
+            <Grid item xs={4}
+              alignItems="center"
+              justify="center">
+              <Typography variant="overline"
+                >
+                  <Box>
+                    Hjelpetrener, Ullensaker Gym og Turn
+                  </Box>
+              </Typography>
+              <Typography variant="overline">
+                <Box>
+                  Jan 2012- Jan 2015
+                </Box>
+              </Typography>
+            </Grid>
+            <Grid item xs={7}
+              alignItems="center"
+              justify="center">
+              <Typography>
+                Her jobbet jeg med barn i alderen fra 4-14 år. Jeg jobbet i et team av andre trenere og lærte barna å turne
+              </Typography>
+            </Grid>
+          </Grid>
+        </Paper>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Typography variant="h2" >
