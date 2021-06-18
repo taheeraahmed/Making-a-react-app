@@ -16,7 +16,8 @@ import LocalHospitalOutlinedIcon from '@material-ui/icons/LocalHospitalOutlined'
 import LocalAirportOutlinedIcon from '@material-ui/icons/LocalAirportOutlined';
 import FitnessCenterOutlinedIcon from '@material-ui/icons/FitnessCenterOutlined';
 import { ListTech } from './ListTech/ListTech.js';
-import { EntryCV } from './EntryCV/EntryCV';
+import { EntryCV } from './EntryCV/EntryCV.js';
+import { Highlighter } from './Highlighter/Highlighter.js'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -130,15 +131,15 @@ export default function Navbar() {
             <Typography paragraph = {true}>
               Heisann, 
               jeg heter Taheera (uttales Tahira) og jeg er en 24 år gammel jente fra Jessheim. 
-              For øyeblikket studerer jeg datateknologi på NTNU og begynner i 4.klasse
+              For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse
             </Typography>
             <Typography paragraph = {true}>
-              Jeg kjeder meg denne sommeren. Derfor bestemte jeg meg for å lage en aldri så liten nettside for å
+              Jeg <Highlighter word = 'kjeder meg'/> denne sommeren. Derfor bestemte jeg meg for å lage en aldri så liten nettside for å
               prøve å lære meg hvordan MaterialUI og React faktisk fungerer. Ville sagt jeg delvis
               skjønner meg litt mer på det
             </Typography>
             <Typography paragraph = {true}>
-              Obviously synes jeg gradienter er veldig kule. Bruker det på alt her
+            <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
             </Typography>
           </Box>
           <Box p={1} width="33%">
@@ -155,26 +156,66 @@ export default function Navbar() {
           paragraph={true}
           variant="h3" 
           className={ classes.h3 }>
-          &gt; Tekniske kunnskaper
+          Nøkkelord
         </Typography>
         <ListTech/>
         <Typography 
           paragraph={true}
           variant="h3" 
           className={ classes.h3 }>
-          &gt; Utdannelse
+          Utdannelse
         </Typography>
-        <EntryCV 
-          description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
           innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
           occupationAndPlace = 'Datateknologi, NTNU'
-          time='Aug 2017 - Jun 2023'
-          />
-        <EntryCV 
-          occupationAndPlace = 'Jessheim Videregående Skole'
+          time='Aug 2017 - Jun 2023'/>
+        <EntryCV occupationAndPlace = 'Jessheim Videregående Skole'
           time='Aug 2012 - Jun 2015'
-          description="Gikk studiespesialiserende med valgfag som engelsk, matte, fysikk og kjemi"
-        />
+          description="Gikk studiespesialiserende med valgfag som engelsk, matte, fysikk og kjemi"/>
+        <Typography 
+          paragraph={true}
+          variant="h3" 
+          className={ classes.h3 }>
+          Frivillig arbeid
+        </Typography>
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'/>
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'/>
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'/>
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'/>
+      <Typography 
+          paragraph={true}
+          variant="h3" 
+          className={ classes.h3 }>
+          Jobberfaringer
+        </Typography>
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'/>
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'/>
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'/>
+        <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'/>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Typography variant="h2" >
