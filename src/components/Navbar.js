@@ -16,6 +16,7 @@ import LocalHospitalOutlinedIcon from '@material-ui/icons/LocalHospitalOutlined'
 import LocalAirportOutlinedIcon from '@material-ui/icons/LocalAirportOutlined';
 import FitnessCenterOutlinedIcon from '@material-ui/icons/FitnessCenterOutlined';
 import { ListTech } from './ListTech/ListTech.js';
+import { EntryCV } from './EntryCV/EntryCV';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -81,11 +82,6 @@ const useStyles = makeStyles({
     textAlign: 'left',
     fontSize: 25,
     paddingTop:30,
-  },
-  paper: {
-    padding:10,
-    marginTop:10,
-    paddingLeft:10,
   },
   backgroundIcon: {
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
@@ -161,232 +157,24 @@ export default function Navbar() {
           className={ classes.h3 }>
           &gt; Tekniske kunnskaper
         </Typography>
-        <ListTech></ListTech>
+        <ListTech/>
         <Typography 
           paragraph={true}
           variant="h3" 
           className={ classes.h3 }>
           &gt; Utdannelse
         </Typography>
-        <Paper 
-          variant="outlined"
-          className = {classes.paper} 
-          square>
-          <Grid 
-            alignItems="center"
-            justify="center"
-            container spacing={1}>
-          <Grid item xs={1}>
-                <StorageOutlinedIcon style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
-           </Grid>
-          <Grid item xs={4}
-              alignItems="center"
-              justify="center">
-              <Typography variant="overline"
-                >
-                  <Box>
-                    Datateknologi, NTNU i Trondheim
-                  </Box>
-              </Typography>
-              <Typography variant="overline">
-                <Box>
-                  2017-2023
-                </Box>
-              </Typography>
-            </Grid>
-          <Grid item xs={7}
-              alignItems="center"
-              justify="center">
-              <Typography>
-                Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
-                innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen "Databaser og Søk" 
-              </Typography>
-            </Grid>
-          </Grid>
-        </Paper>
-        <Paper 
-          variant="outlined"
-          className = {classes.paper} 
-          square>
-          <Grid 
-            alignItems="center"
-            justify="center"
-            container spacing={1}>
-          <Grid item xs={1}>
-                <SchoolOutlinedIcon style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
-           </Grid>
-            <Grid item xs={4}
-              alignItems="center"
-              justify="center">
-              <Typography variant="overline"
-                >
-                  <Box>
-                    Jessheim videregående skole
-                  </Box>
-              </Typography>
-              <Typography variant="overline">
-                <Box>
-                  2012-2015
-                </Box>
-              </Typography>
-            </Grid>
-            <Grid item xs={7}
-              alignItems="center"
-              justify="center">
-              <Typography>
-                Gikk studiespesialiserende med valgfag som fysikk, matte, kjemi og engelsk.
-              </Typography>
-            </Grid>
-          </Grid>
-        </Paper>
-        <Typography 
-          paragraph={true}
-          variant="h3" 
-          className={ classes.h3 }>
-          &gt; Jobberfaringer
-        </Typography>
-        <Paper 
-          variant="outlined"
-          className = {classes.paper} 
-          square>
-          <Grid 
-            alignItems="center"
-            justify="center"
-            container spacing={1}>
-          <Grid item xs={1}>
-                <LocalPizzaOutlinedIcon style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
-           </Grid>
-            <Grid item xs={4}
-              alignItems="center"
-              justify="center">
-              <Typography variant="overline"
-                >
-                  <Box>
-                    Sjåfør, Peppes Pizza
-                  </Box>
-              </Typography>
-              <Typography variant="overline">
-                <Box>
-                  Aug 2016 - Aug 2021
-                </Box>
-              </Typography>
-            </Grid>
-            <Grid item xs={7}
-              alignItems="center"
-              justify="center">
-              <Typography>
-                Her leverte jeg glede, i form av pizza, på døren til mange på Jessheim! 
-                Hadde deltidsstilling som sjåfør med andre ord og jobber her hovedsakelig i sommerferiene.
-              </Typography>
-            </Grid>
-          </Grid>
-        </Paper>
-        <Paper 
-          variant="outlined"
-          className = {classes.paper} 
-          square>
-          <Grid 
-            alignItems="center"
-            justify="center"
-            container spacing={1}>
-          <Grid item xs={1}>
-                <LocalHospitalOutlinedIcon  style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
-           </Grid>
-            <Grid item xs={4}
-              alignItems="center"
-              justify="center">
-              <Typography variant="overline"
-                >
-                  <Box>
-                    Medic, Forsvaret
-                  </Box>
-              </Typography>
-              <Typography variant="overline">
-                <Box>
-                  Aug 2015- Aug 2016
-                </Box>
-              </Typography>
-            </Grid>
-            <Grid item xs={7}
-              alignItems="center"
-              justify="center">
-              <Typography>
-              Fullførte førstegangstjenesten min på Madlaleiren. I løpet av denne tiden lærte jeg grunnleggende førstehjelp. 
-              I tillegg hjalp jeg til på sykestuen på Madla samt. diverse militærøvelser i regi av Sjøforsvarets befalsskole.
-              </Typography>
-            </Grid>
-          </Grid>
-        </Paper>
-        <Paper 
-          variant="outlined"
-          className = {classes.paper} 
-          square>
-          <Grid 
-            alignItems="center"
-            justify="center"
-            container spacing={1}>
-          <Grid item xs={1}>
-                <LocalAirportOutlinedIcon  style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
-           </Grid>
-            <Grid item xs={4}
-              alignItems="center"
-              justify="center">
-              <Typography variant="overline"
-                >
-                  <Box>
-                    Servicemedarbeider, SSP
-                  </Box>
-              </Typography>
-              <Typography variant="overline">
-                <Box>
-                  Feb 2014- Jun 2015
-                </Box>
-              </Typography>
-            </Grid>
-            <Grid item xs={7}
-              alignItems="center"
-              justify="center">
-              <Typography>
-                Jobbet på Pizza Hut på Oslo Lufthavn. Her hadde jeg ansvar for å både rydde etter besøkende, lage pizza mm.
-              </Typography>
-            </Grid>
-          </Grid>
-        </Paper>
-        <Paper 
-          variant="outlined"
-          className = {classes.paper} 
-          square>
-          <Grid 
-            alignItems="center"
-            justify="center"
-            container spacing={1}>
-          <Grid item xs={1}>
-                <FitnessCenterOutlinedIcon   style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
-           </Grid>
-            <Grid item xs={4}
-              alignItems="center"
-              justify="center">
-              <Typography variant="overline"
-                >
-                  <Box>
-                    Hjelpetrener, Ullensaker Gym og Turn
-                  </Box>
-              </Typography>
-              <Typography variant="overline">
-                <Box>
-                  Jan 2012- Jan 2015
-                </Box>
-              </Typography>
-            </Grid>
-            <Grid item xs={7}
-              alignItems="center"
-              justify="center">
-              <Typography>
-                Her jobbet jeg med barn i alderen fra 4-14 år. Jeg jobbet i et team av andre trenere og lærte barna å turne
-              </Typography>
-            </Grid>
-          </Grid>
-        </Paper>
+        <EntryCV 
+          description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+          innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
+          occupationAndPlace = 'Datateknologi, NTNU'
+          time='Aug 2017 - Jun 2023'
+          />
+        <EntryCV 
+          occupationAndPlace = 'Jessheim Videregående Skole'
+          time='Aug 2012 - Jun 2015'
+          description="Gikk studiespesialiserende med valgfag som engelsk, matte, fysikk og kjemi"
+        />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Typography variant="h2" >
