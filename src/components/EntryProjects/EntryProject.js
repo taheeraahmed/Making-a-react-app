@@ -6,7 +6,7 @@ import MyLink from '../Link/Link';
 import ProjectChips from '../ProjectChips/ProjectChips';
 import { Box } from '@material-ui/core';
 
-export class EntryProjects extends React.Component{
+export default class EntryProject extends React.Component{
     constructor(props){
         super(props)
         this.state = { link : 'Frarthur' }

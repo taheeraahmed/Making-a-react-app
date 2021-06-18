@@ -18,7 +18,7 @@ import FitnessCenterOutlinedIcon from '@material-ui/icons/FitnessCenterOutlined'
 import { ListTech } from './ListTech/ListTech.js';
 import { EntryCV } from './EntryCV/EntryCV.js';
 import { Highlighter } from './Highlighter/Highlighter.js'
-import { EntryProjects } from './EntryProjects/EntryProjects';
+import EntryProject from './EntryProjects/EntryProject.js';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -131,7 +131,7 @@ export default function Navbar() {
           
         <Box display="flex" p={1} style ={{paddingTop: '23px'}} >
           <Box p={1} >
-            <img src={JustMe} style = {{boxShadow: '0px 0px 16px 3px rgba(255,166,158,0.45)', border: '10px solid white'}} width="300" alt="cam"/>
+            <img src={JustMe} style ={{boxShadow: '0px 0px 16px 3px rgba(255,166,158,0.45)', border: '10px solid white'}} width="300" alt="Bare et bilde av meg"/>
           </Box>
           <Box p={4} >
             <Typography paragraph = {true}>
@@ -224,22 +224,22 @@ export default function Navbar() {
         <Typography variant="h2" >
             Prosjekter
         </Typography>
-          <EntryProjects 
+          <EntryProject 
             title = "Chatbot" 
             description="Laget tre forskjellige chatbotter i Python, hvorav en av dem bruker et nevralt nett for å danne en setning" 
             linkName="Github repository"
             linkPath="https://github.com/taheeraahmed/Chat-bots"/>
-          <EntryProjects 
+          <EntryProject 
             title = "Nevralt nettverk" 
             description="Laget et eget nevralt nettverk uten å bruke TensorFlow" 
             linkName="Github repository"
             linkPath="https://github.com/taheeraahmed/Neural-Network"/>
-          <EntryProjects 
+          <EntryProject 
             title = "Shell" 
             description="Implementerte en relativt simpelt shell i C som kan gjøre basic operasjoner som cd og ls" 
             linkName="Github repository"
             linkPath="https://github.com/taheeraahmed/Shell-Implementation"/>
-          <EntryProjects 
+          <EntryProject 
             title = "K-means" 
             description="Implementerte K means algoritmen (i Python) som brukes for klassifisering av ukjent datapunkter" 
             linkName="Github repository"
