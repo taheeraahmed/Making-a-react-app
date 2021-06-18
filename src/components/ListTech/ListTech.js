@@ -1,6 +1,15 @@
-import { Box } from '@material-ui/core';
+import { Box,makeStyles } from '@material-ui/core';
 import React from 'react';
 import './ListTech.css';
+
+const classes = makeStyles ({
+    box: {
+        background: 'black',
+        '&:hover > div:hover':{
+            background: 'blue',
+        }
+    },
+});
 
 
 export class ListTech extends React.Component {
@@ -28,7 +37,7 @@ export class ListTech extends React.Component {
         ];
 
         const listItems = list.map((item) =>(
-             <Box p={1}>
+             <Box p={1} className={classes.box}>
                 {item}
             </Box>
             )
@@ -38,6 +47,7 @@ export class ListTech extends React.Component {
                 <Box display="flex"
                     flexWrap="wrap"
                     alignContent="flex-start"
+                    className={classes.box}
                     >
                 {listItems}
                 </Box>

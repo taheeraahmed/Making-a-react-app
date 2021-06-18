@@ -18,6 +18,7 @@ import FitnessCenterOutlinedIcon from '@material-ui/icons/FitnessCenterOutlined'
 import { ListTech } from './ListTech/ListTech.js';
 import { EntryCV } from './EntryCV/EntryCV.js';
 import { Highlighter } from './Highlighter/Highlighter.js'
+import { EntryProjects } from './EntryProjects/EntryProjects';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -220,6 +221,10 @@ export default function Navbar() {
         <Typography variant="h2" >
             Prosjekter
         </Typography>
+          <EntryProjects/>
+          <EntryProjects/>
+          <EntryProjects/>
+          <EntryProjects/>
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Typography variant="h2">

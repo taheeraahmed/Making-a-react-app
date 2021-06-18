@@ -13,7 +13,7 @@ export class EntryCV extends React.Component{
             <Paper 
                 variant="outlined"
                 style = {{
-                    padding:10,
+                    padding:20,
                     marginTop:10,
                     paddingLeft:10,
                 }}
