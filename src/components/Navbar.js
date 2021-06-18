@@ -91,6 +91,9 @@ const useStyles = makeStyles({
   },
 });
 
+var d = new Date();
+var Age = d.getFullYear() - 1996
+
 export default function Navbar() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -133,8 +136,8 @@ export default function Navbar() {
           <Box p={4} >
             <Typography paragraph = {true}>
               Heisann, 
-              jeg heter Taheera (uttales Tahira) og jeg er en 24 år gammel jente fra Jessheim. 
-              For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse
+              jeg heter Taheera (uttales Tahira) og jeg er en {Age} år gammel jente fra Jessheim. 
+              For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten
             </Typography>
             <Typography paragraph = {true}>
               Jeg <Highlighter word = 'kjeder meg'/> denne sommeren. Derfor bestemte jeg meg for å lage en aldri så liten nettside for å
