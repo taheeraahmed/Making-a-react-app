@@ -7,6 +7,10 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import JustMe from '../images/pb.jpg';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid'
+import StorageOutlinedIcon from '@material-ui/icons/StorageOutlined';
+import SchoolOutlinedIcon from '@material-ui/icons/SchoolOutlined';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -64,7 +68,27 @@ const useStyles = makeStyles({
   tabs: {
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
     fontSize: 20,
-  }
+  },
+  h2 :{
+    textAlign: 'center',
+  },
+  h3: {
+    textAlign: 'left',
+    fontSize: 25,
+    paddingTop:30,
+  },
+  paper: {
+    padding:10,
+    marginTop:5,
+    paddingLeft:10,
+  },
+  backgroundIcon: {
+    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+    width: 80,
+    height: 80,
+    borderRadius: 100,
+    color: '#ffffff'
+  },
 });
 
 export default function Navbar() {
@@ -94,9 +118,9 @@ export default function Navbar() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <h2>
-          Om meg
-        </h2>
+          <Typography variant="h2">
+            Om meg
+          </Typography>
         <Box display="flex" p={1} >
           <Box p={1} width="33%">
             <img src={JustMe} width="300"alt="cam"/>
@@ -123,19 +147,102 @@ export default function Navbar() {
         </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <h2>
+        <Typography variant="h2">
           CV
-        </h2>
+        </Typography>
+        <Typography 
+          paragraph={true}
+          variant="h3" 
+          className={ classes.h3 }>
+          &gt; Utdannelse
+        </Typography>
+        <Paper 
+          variant="outlined"
+          className = {classes.paper} 
+          square>
+          <Grid 
+            alignItems="center"
+            justify="center"
+            container spacing={1}>
+          <Grid item xs={1}>
+                <StorageOutlinedIcon style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
+           </Grid>
+            <Grid item xs={3}
+              alignItems="center"
+              justify="center">
+              <Typography variant="overline"
+                >
+                  <Box>
+                    Datateknologi, NTNU i Trondheim
+                  </Box>
+              </Typography>
+              <Typography variant="overline">
+                <Box>
+                  2017-2023
+                </Box>
+              </Typography>
+            </Grid>
+            <Grid item xs={8}
+              alignItems="center"
+              justify="center">
+              <Typography>
+                Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
+                innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen "Databaser og Søk" 
+              </Typography>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Paper 
+          variant="outlined"
+          className = {classes.paper} 
+          square>
+          <Grid 
+            alignItems="center"
+            justify="center"
+            container spacing={1}>
+          <Grid item xs={1}>
+                <SchoolOutlinedIcon style={{borderRadius: 100, padding:10, fill: "white", width:"50%", height:"50%",background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} />
+           </Grid>
+            <Grid item xs={3}
+              alignItems="center"
+              justify="center">
+              <Typography variant="overline"
+                >
+                  <Box>
+                    Jessheim videregående skole
+                  </Box>
+              </Typography>
+              <Typography variant="overline">
+                <Box>
+                  2012-2015
+                </Box>
+              </Typography>
+            </Grid>
+            <Grid item xs={8}
+              alignItems="center"
+              justify="center">
+              <Typography>
+                Gikk studiespesialiserende med valgfag som fysikk, matte, kjemi og engelsk.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Paper>
+        <Typography 
+          paragraph={true}
+          variant="h3" 
+          className={ classes.h3 }>
+          &gt; Jobberfaringer
+        </Typography>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <h2>
-          Prosjekter
-        </h2>
+        <Typography variant="h2" >
+            Prosjekter
+        </Typography>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <h2>
+        <Typography variant="h2">
           Fordi jeg kan
-        </h2>
+        </Typography>
       </TabPanel>
     </div>
   );
