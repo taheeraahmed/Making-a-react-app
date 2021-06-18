@@ -15,7 +15,7 @@ function App() {
           <Navbar/>
         </main>
         <footer className="footer">
-          Dette skal være en footer
+          
         </footer>
       </div>
   );
