@@ -76,9 +76,6 @@ const useStyles = makeStyles({
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
     fontSize: 20,
   },
-  h2 :{
-    textAlign: 'center',
-  },
   h3: {
     textAlign: 'left',
     fontSize: 25,
@@ -103,7 +100,7 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" elevation={0}>
         <Tabs
           className={classes.tabs}
           classes={{ indicator: classes.indicator }}
@@ -120,14 +117,19 @@ export default function Navbar() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-          <Typography variant="h2">
-            Om meg
-          </Typography>
-        <Box display="flex" p={1} >
-          <Box p={1} width="33%">
-            <img src={JustMe} width="300"alt="cam"/>
+          <Box
+            alignItems= 'center'
+            alignContent= 'center'
+            display ='flex'
+            >
+            
           </Box>
-          <Box p={1} width="33%" >
+          
+        <Box display="flex" p={1} style ={{paddingTop: '23px'}} >
+          <Box p={1} >
+            <img src={JustMe} style = {{boxShadow: '0px 0px 16px 3px rgba(255,166,158,0.45)', border: '10px solid white'}} width="300" alt="cam"/>
+          </Box>
+          <Box p={4} >
             <Typography paragraph = {true}>
               Heisann, 
               jeg heter Taheera (uttales Tahira) og jeg er en 24 år gammel jente fra Jessheim. 
@@ -142,19 +144,16 @@ export default function Navbar() {
             <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
             </Typography>
           </Box>
-          <Box p={1} width="33%">
+          <Box p={1} >
             <Typography>
             </Typography>
           </Box>
         </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Typography variant="h2">
-          CV
-        </Typography>
         <Typography 
           paragraph={true}
-          variant="h3" 
+          variant="h3"  
           className={ classes.h3 }>
           Nøkkelord
         </Typography>
