@@ -21,6 +21,7 @@ import locomotive from '../icons/locomotive.svg'
 import web from '../icons/web.svg'
 import drama from '../icons/drama.svg'
 import customerService from '../icons/customerService.svg'
+import ListTech2 from './ListTech/ListTech';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -133,7 +134,7 @@ export default function Navbar() {
           
         <Box display="flex" p={1} style ={{paddingTop: '23px'}} >
           <Box p={1} >
-            <img src={JustMe} style ={{boxShadow: '0px 0px 16px 3px rgba(255,166,158,0.45)', border: '10px solid white'}} width="300" alt="Bare et bilde av meg"/>
+            <img src={JustMe} style ={{border: 'double 6px transparent', backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} width="300" alt="Bare et bilde av meg"/>
           </Box>
           <Box p={4} >
             <Typography paragraph = {true}>
@@ -163,7 +164,7 @@ export default function Navbar() {
           className={ classes.h3 }>
           Nøkkelord
         </Typography>
-        <ListTech/>
+        <ListTech2/>
         <Typography 
           paragraph={true}
           variant="h3" 
