@@ -7,7 +7,6 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import JustMe from '../images/pb.jpg';
-import { ListTech } from './ListTech/ListTech.js';
 import { EntryCV } from './EntryCV/EntryCV.js';
 import { Highlighter } from './Highlighter/Highlighter.js'
 import { ProjectList } from './EntryProjects/ProjectList.js'

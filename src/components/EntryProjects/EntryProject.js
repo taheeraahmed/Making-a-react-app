@@ -7,11 +7,7 @@ import ProjectChips from '../ProjectChips/ProjectChips';
 import { Box } from '@material-ui/core';
 
 export default class EntryProject extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = { link : 'Frarthur' }
-    }
-    render(){
+    render() {
         return (
             <div>
                 <Paper variant="outlined" 
@@ -30,8 +26,8 @@ export default class EntryProject extends React.Component{
                             style = {{
                                 height:150,
                             }}>
-                            <Typography variant ="body">
-                                <img height = "150" src={this.props.imagePath}/>
+                            <Typography variant ="body1">
+                                <img height = "150" src={this.props.imagePath} alt={this.props.title}/>
                             </Typography>
                         </Grid>
                         <Grid item xs={8}>
@@ -45,16 +41,8 @@ export default class EntryProject extends React.Component{
                                 <Box display='flex'
                                     flexWrap="wrap"
                                     alignContent="flex-start">
-                                        <Box pr={0.5}>
-                                            <ProjectChips name="Python"/>
-                                        </Box>
-                                        <Box pr={0.5}>
-                                            <ProjectChips name="Kunstig Intelligens"/>
-                                        </Box>   
+                                    <ProjectChips chips={this.props.chips}/>
                                 </Box>
-                                {/* aListOfStuff =  ['Python', 'Kunstig Intelligens', 'NLP', 'TensorFlow']}
-                                {/* <ProjectChips list={aListOfStuff}> */}
-                                
                             </Typography>
                             <Typography variant ="body">
                                 {this.props.description}

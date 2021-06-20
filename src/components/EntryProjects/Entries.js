@@ -1,9 +1,11 @@
+import ChatBot from '../../images/chatbot.png'
+
 const Projects = {
     'ChatBot': {
         title: 'Chatbot',
         linkName: 'Github Repository',
         linkPath: 'https://github.com/taheeraahmed/Chat-bots',
-        imgPath: '',
+        imgPath: {ChatBot},
         chips: ['Python', 'Kunstig Intelligens', 'NLP', 'TensorFlow', 'Dyp læring'],
         description: 'Laget tre forskjellige chatbotter i Python, hvorav en av dem bruker et nevralt nett for å danne en setning' 
     },

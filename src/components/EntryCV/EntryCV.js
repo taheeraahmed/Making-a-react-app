@@ -31,7 +31,7 @@ export class EntryCV extends React.Component{
                 alignItems="center"
                 justify="center"
                 container spacing={1}>
-            <Grid item xs={1}>
+            <Grid item xs={2}>
                     <img src={this.props.image} style={styles.img} />
             </Grid>
             <Grid item xs={4}
@@ -49,7 +49,7 @@ export class EntryCV extends React.Component{
                     </Box>
                 </Typography>
                 </Grid>
-            <Grid item xs={7}
+            <Grid item xs={6}
                 alignItems="center"
                 justify="center">
                 <Typography>
