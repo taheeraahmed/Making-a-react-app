@@ -9,14 +9,13 @@ const useStyles = makeStyles((theme) => ( {
             margin: theme.spacing(0.5),
         },
         "&:hover":{
-            transition:'height .5s ease-out 0s',
             background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
             boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',
             color: 'white',
             borderRadius: '5px',
             transform: 'scale(1.001)',
             transitionDuration: '0.5s',
-            transition: 'color 0.1ms ease-out, background 1s ease-in',
+            transition: 'color 0.1ms ease-out, background 1s linear',
         }
     },
 }));
