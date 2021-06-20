@@ -27,9 +27,6 @@ const useStyles = makeStyles((theme) => ({
     margin: 7,
     "&&:hover": {
         transitionDelay: 2,
-        border: 'double 4px transparent',
-        borderRadius: '80px',
-        backgroundImage: 'linear-gradient(white, white), radial-gradient(circle at top left, #FF8E53 30%,#FE6B8B 90% )',
         backgroundOrigin: 'border-box',
         backgroundClip: 'padding-box, border-box',
         boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',

@@ -3,11 +3,27 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography';
 import MyLink from '../Link/Link';
-import ProjectChips from '../ProjectChips/ProjectChips';
 import { Box } from '@material-ui/core';
+import Chip from '@material-ui/core/Chip';
+
+const styles = {
+    chip: {
+        marginRight: '8px',
+        boxShadow: '0 1px 6px 3px rgba(255, 105, 135, .3)',
+        borderRadius: '80px',
+        background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+        color: 'white',
+    }
+};
+
 
 export default class EntryProject extends React.Component{
     render() {
+        const chips_list = this.props.chips
+        const listItems = chips_list.map((item) =>(
+            <Chip label={item} style={styles.chip}/>
+           )
+        );
         return (
             <div>
                 <Paper variant="outlined" 
@@ -41,7 +57,7 @@ export default class EntryProject extends React.Component{
                                 <Box display='flex'
                                     flexWrap="wrap"
                                     alignContent="flex-start">
-                                    <ProjectChips/>
+                                    {listItems}
                                 </Box>
                             </Typography>
                             <Typography variant ="body">
