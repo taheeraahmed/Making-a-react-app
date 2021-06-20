@@ -41,7 +41,7 @@ export default class EntryProject extends React.Component{
                                 <Box display='flex'
                                     flexWrap="wrap"
                                     alignContent="flex-start">
-                                    <ProjectChips chips={this.props.chips}/>
+                                    <ProjectChips/>
                                 </Box>
                             </Typography>
                             <Typography variant ="body">

@@ -7,6 +7,7 @@ const project_list = [];
 
 for (const project in Projects) {
     let item = Projects[project];
+    console.log(item.chips)
     project_list.push(
       <EntryProject
         key={item.title}
@@ -14,20 +15,17 @@ for (const project in Projects) {
         description={item.description}
         linkName={item.linkName}
         linkPath={item.linkPath}
-        imagePath={ChatBot}
+        imagePath={item.imagePath}
+        /* 
+        Liste med forskjellige chips blir sendt som props 
+        Hvordan aksessere disse i den tilhørende child komponenten prosje
+        */
         chips={item.chips}
       />
-      
       )
   };
 
 export class ProjectList extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-        chips: []
-    };
-}
   render(){
     return (
       <div>

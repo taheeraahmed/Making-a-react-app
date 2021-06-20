@@ -2,6 +2,7 @@ import React from 'react';
 import Chip from '@material-ui/core/Chip';
 
 
+
 export default class ProjectChips extends React.Component {
     render(){
       const list = ['Python', 'Kunstig Intelligens', 'Natural Language Processing','Tensorflow']
@@ -15,5 +16,5 @@ export default class ProjectChips extends React.Component {
           {listItems}
         </div>
     );
-  }
+  } 
 }
