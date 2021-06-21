@@ -1,3 +1,18 @@
+.visibledevice {
+  display:none;
+}
+.visibledesktop {
+  display:display;
+}
+
+@media (max-width : 1017px) {
+    .visibledevice {
+      display:block;
+    }
+    .visibledesktop {
+      display:none;}
+}
+
 .App {
   margin: auto;
 }
@@ -7,6 +22,7 @@
   font-size: calc(10px + 2vmin);
   padding: 5vh 20vh 5vh 20vh;
   margin: auto;
+  width:75%;
 }
 .main {
   margin: auto;
@@ -22,6 +38,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.2;
+  text-align: center;
 }
 h2 {
   display:inline-block;

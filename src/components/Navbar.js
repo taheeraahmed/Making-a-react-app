@@ -83,14 +83,7 @@ const useStyles = makeStyles({
     textAlign: 'left',
     fontSize: 25,
     paddingTop:30,
-  },
-  backgroundIcon: {
-    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
-    width: 80,
-    height: 80,
-    borderRadius: 100,
-    color: '#ffffff'
-  },
+  }
 });
 
 var d = new Date();
