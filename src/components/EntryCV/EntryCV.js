@@ -32,7 +32,7 @@ export class EntryCV extends React.Component{
                 justify="center"
                 container spacing={1}>
             <Grid item xs={2}>
-                    <img src={this.props.image} style={styles.img} />
+                    <img src={this.props.image} style={styles.img} alt='icon'/>
             </Grid>
             <Grid item xs={4}
                 alignItems="center"

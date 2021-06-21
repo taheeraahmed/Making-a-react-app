@@ -6,7 +6,6 @@ import { Box } from '@material-ui/core';
 import Chip from '@material-ui/core/Chip';
 import Link from '@material-ui/core/Link';
 
-
 const styles = {
     chip: {
         marginRight: '8px',
@@ -31,7 +30,6 @@ export default class EntryProject extends React.Component{
             <Chip label={item} style={styles.chip}/>
            )
         );
-        const imagePath = this.props.imagePath
         return (
             <div>
                 <Paper variant="outlined" 

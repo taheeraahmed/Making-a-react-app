@@ -1,5 +1,3 @@
-import ChatBot from './images/chatbot.png'
-import Kmeans from './images/kmeans.png'
 
 const Projects = {
     'ChatBot': {
