@@ -5,7 +5,7 @@ import Info from './components/Info';
 function App() {
   return (
       <div className="App">
-        <div class="visibledesktop">this displays for desktop and tablet
+        <div class="visibledesktop">
           <header className="header">
             <h1>
               Taheera Ahmed
@@ -18,8 +18,8 @@ function App() {
           <footer className="footer">
           </footer>
         </div>
-        <div class="visibledevice">this displays for mobile
-          <header className="headerMobile">
+        <div class="visibledevice">
+          <header className="headerMobile" >
             <h1>
               Taheera Ahmed
             </h1>
