@@ -1,6 +1,5 @@
 import { Box,makeStyles } from '@material-ui/core';
 import React from 'react';
-import './ListTech.css';
 
 const useStyles = makeStyles((theme) => ( {
     box: {
