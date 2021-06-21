@@ -117,18 +117,13 @@ export default function Navbar() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <Grid container spacing={0} 
-          style ={{paddingTop: '23px', paddingLeft:'10px'}} 
+        <Grid container spacing={4} 
+          style ={{paddingTop: '23px', paddingRight:'10px'}} 
           direction="row"
           justify="center"
           alignItems="center">
-          <Grid item xs={12} sm={4} >
-            <center>
-              <img src={JustMe} style ={{border: 'double 6px transparent', backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} width="300" alt="Bare et bilde av meg"/>
-            </center>
-          </Grid>
           <Grid item xs={12} sm={8} >
-            <Typography paragraph = {true}>
+          <Typography paragraph = {true}>
               Heisann, 
               jeg heter Taheera (uttales Tahira) og jeg er en {Age} år gammel jente fra Jessheim. 
               For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten
@@ -141,6 +136,12 @@ export default function Navbar() {
             <Typography paragraph = {true}>
             <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
             </Typography>
+          </Grid>
+          <Grid item xs={12} sm={4} >
+          <center>
+              <img src={JustMe} style ={{border: 'double 6px transparent', backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} width="100%" alt="Bare et bilde av meg"/>
+            </center>
+            
           </Grid>
         </Grid>
       </TabPanel>
