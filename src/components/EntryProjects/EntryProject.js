@@ -5,7 +5,6 @@ import Typography from '@material-ui/core/Typography';
 import { Box } from '@material-ui/core';
 import Chip from '@material-ui/core/Chip';
 import Link from '@material-ui/core/Link';
-import ChatBot from './images/chatbot.png'
 
 
 const styles = {
@@ -49,7 +48,7 @@ export default class EntryProject extends React.Component{
                             style = {{
                             }}>
                             <Typography variant ="body1">
-                                <img height = "90%" width="90%" src={this.props.image} alt={this.props.title}/>
+                                <img height = "90%" width="90%" src={this.props.image} style ={{border: 'double 6px transparent', backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} alt={this.props.title}/>
                             </Typography>
                         </Grid>
                         <Grid item xs={8}>

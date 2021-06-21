@@ -1,7 +1,6 @@
 import React from 'react';
 import Projects from './Entries.js';
 import EntryProject from './EntryProject.js';
-import ChatBot from '../../images/chatbot.png'
 
 
 
@@ -19,7 +18,7 @@ export class ProjectList extends React.Component{
           description={item.description}
           linkName={item.linkName}
           linkPath={item.linkPath}
-          imagePath={item.imagePath}
+          image={item.image}
           /* 
           Liste med forskjellige chips blir sendt som props 
           Hvordan aksessere disse i den tilhørende child komponenten prosje
