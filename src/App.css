@@ -5,7 +5,7 @@
   display:display;
 }
 
-@media (max-width : 1017px) {
+@media (max-width : 917px) {
     .visibledevice {
       display:inline-block;
       width: 150%;
