@@ -19,6 +19,7 @@ const styles = {
         color: 'black',
         padding: '10pt',
         
+        
     }
 };
 
