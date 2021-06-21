@@ -19,10 +19,6 @@ export class ProjectList extends React.Component{
           linkName={item.linkName}
           linkPath={item.linkPath}
           image={item.image}
-          /* 
-          Liste med forskjellige chips blir sendt som props 
-          Hvordan aksessere disse i den tilhørende child komponenten prosje
-          */
           chips={item.chips}
         />
         )
