@@ -8,7 +8,6 @@
 @media (max-width : 917px) {
     .visibledevice {
       display:inline-block;
-      width: 150%;
     }
     .visibledesktop {
       display:none;}

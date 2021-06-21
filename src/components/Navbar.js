@@ -122,25 +122,26 @@ export default function Navbar() {
           direction="row"
           justify="center"
           alignItems="center">
-          <Grid item xs={12} sm={8} >
-          <Typography paragraph = {true}>
-              Heisann, 
-              jeg heter Taheera (uttales Tahira) og jeg er en {Age} år gammel jente fra Jessheim. 
-              For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten
-            </Typography>
-            <Typography paragraph = {true}>
-              Jeg <Highlighter word = 'kjeder meg'/> denne sommeren. Derfor bestemte jeg meg for å lage en aldri så liten nettside for å
-              prøve å lære meg hvordan MaterialUI og React faktisk fungerer. Ville sagt jeg delvis
-              skjønner meg litt mer på det
-            </Typography>
-            <Typography paragraph = {true}>
-            <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
-            </Typography>
-          </Grid>
           <Grid item xs={12} sm={4} >
-          <center>
+            <center>
               <img src={JustMe} style ={{border: 'double 6px transparent', backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} width="100%" alt="Bare et bilde av meg"/>
             </center>
+          
+          </Grid>
+          <Grid item xs={12} sm={8} >
+            <Typography paragraph = {true}>
+                Heisann, 
+                jeg heter Taheera (uttales Tahira) og jeg er en {Age} år gammel jente fra Jessheim. 
+                For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten
+            </Typography>
+            <Typography paragraph = {true}>
+                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren. Derfor bestemte jeg meg for å lage en aldri så liten nettside for å
+                prøve å lære meg hvordan MaterialUI og React faktisk fungerer. Ville sagt jeg delvis
+                skjønner meg litt mer på det
+            </Typography>
+            <Typography paragraph = {true}>
+              <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
+            </Typography>
             
           </Grid>
         </Grid>
