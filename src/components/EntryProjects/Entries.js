@@ -21,7 +21,7 @@ const Projects = {
         linkName: 'Github Repository',
         image: 'https://photos5.appleinsider.com/gallery/29440-47604-000-3x2-Terminal-part-1-xl.jpg',
         linkPath: 'https://github.com/taheeraahmed/Shell-Implementation',
-        chips: ['C'],
+        chips: ['C', 'Operativ systemer'],
         description: 'Implementerte et relativt simpelt shell i C som kan gjøre basic operasjoner som cd, pipe og ls' 
     },
     'Kmeans': {
@@ -29,7 +29,7 @@ const Projects = {
         linkName: 'Github Repository',
         linkPath: 'https://github.com/taheeraahmed/Classification-Decision-Tree-KNN',
         image: 'https://media.geeksforgeeks.org/wp-content/uploads/20190812011831/Screenshot-2019-08-12-at-1.09.42-AM.png',
-        chips: ['Python', 'Kunstig Intelligens', 'Data mining'],
+        chips: ['Python', 'Kunstig Intelligens', 'Data mining', 'Klyngeanalyse'],
         description: 'Implementerte K means algoritmen (i Python) som brukes for klassifisering av ukjente datapunkter' 
     },
   };
