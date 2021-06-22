@@ -120,22 +120,25 @@ export default function Navbar() {
         <Grid container spacing={4} 
           style ={{paddingTop: '23px', paddingRight:'10px'}} 
           direction="row"
-          justify="center"
-          alignItems="center">
+          justify="center">
           <Grid item xs={12} sm={4} >
             <center>
               <img src={JustMe} style ={{border: 'double 6px transparent', backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} width="100%" alt="Bare et bilde av meg"/>
             </center>
-          
-          </Grid>
-          <Grid item xs={12} sm={4} >
             <Typography paragraph = {true} variant='body1' style={{lineHeight: '1.8'}}>
                 Heisann, 
                 jeg heter Taheera (uttales Tahira) og jeg er en {Age} år gammel jente fra Jessheim. 
-                For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten
+                For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten. 
+                Jeg er veldig 
+            </Typography>
+          
+          </Grid>
+          <Grid item xs={12} sm={4} >
+            <Typography variant='h3' className={ classes.h3 }>
+              Hvor har jeg laget denne siden?
             </Typography>
             <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
-                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren, og relativt skuffet over at jeg <Highlighter word="ikke fikk relevant sommerjobb"/>. DERFOR har jeg
+                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren, og er relativt skuffet over at jeg <Highlighter word="ikke"/> fikk relevant sommerjobb. DERFOR har jeg
                 tatt saken i egne hender og har laget en liten nettside hvor jeg
                 prøver å lære meg hvordan <Highlighter word="MaterialUI og React"/> faktisk fungerer. Saaamtidig som jeg kan ha et annet sted (enn github) å legge 
                 ut prosjekter jeg gjør.
@@ -143,6 +146,9 @@ export default function Navbar() {
             
           </Grid>
           <Grid item xs={12} sm={4} >
+          <Typography variant='h3' className={ classes.h3 }>
+              Planer for sommeren
+            </Typography>
             <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
               Har lyst til å legge til at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Jeg har planer om å lage 
               en deep learning chatbot, dvs. en chatbot som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
@@ -150,11 +156,11 @@ export default function Navbar() {
               data på en fet måte.
               Python er defintivt favoritten her :,)
             </Typography>
-            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
-              <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
-            </Typography>
             
           </Grid>
+          <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
+              <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
+            </Typography>
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
