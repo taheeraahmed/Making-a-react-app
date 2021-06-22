@@ -22,7 +22,6 @@ import web from '../icons/web.svg'
 import drama from '../icons/drama.svg'
 import customerService from '../icons/customerService.svg'
 import ListTech2 from './ListTech/ListTech';
-import GridBase from "@material-ui/core/Grid";
 
 
 function TabPanel(props) {
