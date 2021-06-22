@@ -22,6 +22,8 @@ import web from '../icons/web.svg'
 import drama from '../icons/drama.svg'
 import customerService from '../icons/customerService.svg'
 import ListTech2 from './ListTech/ListTech';
+import GridBase from "@material-ui/core/Grid";
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -84,6 +86,10 @@ const useStyles = makeStyles({
     textAlign: 'left',
     fontSize: 25,
     paddingTop:30,
+  },
+  grid: {
+    flexGrow: 1,
+    padding: 0,
   }
 });
 
@@ -120,44 +126,59 @@ export default function Navbar() {
         <Grid container spacing={4} 
           style ={{paddingTop: '23px', paddingRight:'10px'}} 
           direction="row"
-          justify="center">
-          <Grid item xs={12} sm={4} >
-            <center>
-              <img src={JustMe} style ={{border: 'double 6px transparent', backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} width="100%" alt="Bare et bilde av meg"/>
-            </center>
-            <Typography paragraph = {true} variant='body1' style={{lineHeight: '1.8'}}>
-                Heisann, 
-                jeg heter Taheera (uttales Tahira) og jeg er en {Age} år gammel jente fra Jessheim. 
+          justify="center"
+          classname={classes.grid}>
+          <Grid item xs={12} sm={6} lg={6} >
+              <center>
+              <img src={JustMe} style ={{border: 'double 6px transparent', marginBottom: 20, backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} width="60%" alt="Bare et bilde av meg"/>
+              </center>
+            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
+                <Typography variant='h1' style={{fontSize: 30, display: 'inline', fontWeight:'bold',}}>Heisann, </Typography>
+                Jeg heter Taheera (uttales Tahira) og jeg er en {Age} år gammel jente fra Jessheim. 
                 For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten. 
-                Jeg er veldig 
-            </Typography>
-          
-          </Grid>
-          <Grid item xs={12} sm={4} >
-            <Typography variant='h3' className={ classes.h3 }>
-              Hvor har jeg laget denne siden?
+                Jeg har valgt retningen "Databaser og søk", og er veldig spent på hvilke utfordringer jeg får neste semester. 
+  
             </Typography>
             <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
-                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren, og er relativt skuffet over at jeg <Highlighter word="ikke"/> fikk relevant sommerjobb. DERFOR har jeg
-                tatt saken i egne hender og har laget en liten nettside hvor jeg
-                prøver å lære meg hvordan <Highlighter word="MaterialUI og React"/> faktisk fungerer. Saaamtidig som jeg kan ha et annet sted (enn github) å legge 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </Typography>
+
+          </Grid>
+          <Grid item xs={12} sm={6} lg={6} >
+            <Typography variant='h3' className={ classes.h3 }>
+              Hvorfor har jeg laget denne siden?
+            </Typography>
+            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
+                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren, og er relativt skuffet over at jeg <Highlighter word="ikke"/> fikk 
+                relevant sommerjobb. DERFOR har jeg tatt saken i egne hender og har laget en liten nettside hvor jeg
+                prøver å lære meg hvordan <Highlighter word="MaterialUI"/> og <Highlighter word="React"/> faktisk fungerer. Saaamtidig som jeg kan ha et annet sted (enn github) å legge 
                 ut prosjekter jeg gjør.
             </Typography>
-            
-          </Grid>
-          <Grid item xs={12} sm={4} >
-          <Typography variant='h3' className={ classes.h3 }>
+            <Typography variant='h3' className={ classes.h3 }>
               Planer for sommeren
             </Typography>
             <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
-              Har lyst til å legge til at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Jeg har planer om å lage 
+              Vil tilføye at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Jeg har planer om å lage 
               en deep learning chatbot, dvs. en chatbot som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
-              lære meg hvordan <Highlighter word="Tensorflow"/> fungerer. Og tilslutt men ikke minst se litt på seaborn, for lære meg å visualisere
+              lære meg hvordan <Highlighter word="Tensorflow"/> fungerer. Og tilslutt men ikke minst se litt på <Highlighter word="seaborn"/>, for lære meg å visualisere
               data på en fet måte.
               Python er defintivt favoritten her :,)
             </Typography>
+
+            <Typography variant='h3' className={ classes.h3 }>
+              Må finne ut hva mer jeg kan skrive
+            </Typography>
+            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
+              Vil tilføye at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Jeg har planer om å lage 
+              en deep learning chatbot, dvs. en chatbot som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
+              lære meg hvordan <Highlighter word="Tensorflow"/> fungerer. Og tilslutt men ikke minst se litt på <Highlighter word="seaborn"/>, 
+              for lære meg å visualisere data på en fet måte.
+              Python er defintivt favoritten her :,)
+            </Typography>
+            
             
           </Grid>
+
           <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
               <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
             </Typography>
