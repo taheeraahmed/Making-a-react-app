@@ -128,27 +128,30 @@ export default function Navbar() {
             </center>
           
           </Grid>
-          <Grid item xs={12} sm={8} >
-            <Typography paragraph = {true}>
+          <Grid item xs={12} sm={4} >
+            <Typography paragraph = {true} variant='body1' style={{lineHeight: '1.8'}}>
                 Heisann, 
                 jeg heter Taheera (uttales Tahira) og jeg er en {Age} år gammel jente fra Jessheim. 
                 For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten
             </Typography>
-            <Typography paragraph = {true}>
-                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren, og relativt skuffet over at jeg <Highlighter word="ikke fikk noen sommerjobb"/>. DERFOR har jeg
+            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
+                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren, og relativt skuffet over at jeg <Highlighter word="ikke fikk relevant sommerjobb"/>. DERFOR har jeg
                 tatt saken i egne hender og har laget en liten nettside hvor jeg
                 prøver å lære meg hvordan <Highlighter word="MaterialUI og React"/> faktisk fungerer. Saaamtidig som jeg kan ha et annet sted (enn github) å legge 
                 ut prosjekter jeg gjør.
             </Typography>
-            <Typography paragraph = {true}>
-              Har lyst til å legge til at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Skal også prøve å lære meg hvordan <Highlighter word="Tensorflow"/> fungerer samt, seaborn (begge er Python bibllioteker). 
+            
+          </Grid>
+          <Grid item xs={12} sm={4} >
+            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
+              Har lyst til å legge til at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Jeg har planer om å lage 
+              en deep learning chatbot, dvs. en chatbot som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
+              lære meg hvordan <Highlighter word="Tensorflow"/> fungerer. Og tilslutt men ikke minst se litt på seaborn, for lære meg å visualisere
+              data på en fet måte.
               Python er defintivt favoritten her :,)
             </Typography>
-            <Typography paragraph = {true}>
+            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
               <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
-            </Typography>
-            <Typography>
-              Dersom du har lyst kan du også sjekke ut vsco-en min :3 
             </Typography>
             
           </Grid>
@@ -230,8 +233,11 @@ export default function Navbar() {
           <ProjectList/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Typography variant="h2">
+        <Typography variant="h2" paragraph = {true}>
           Fordi jeg kan
+        </Typography>
+        <Typography>
+          Her vil jeg legge inn morsomme ting 
         </Typography>
       </TabPanel>
     </div>

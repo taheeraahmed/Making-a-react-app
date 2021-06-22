@@ -4,7 +4,15 @@
     padding: 5px;
     border-radius: 6px;
     color: #ffffff;
+    transition: 0s background;
+    font-weight: bold;
+
+    
+}
+
+.highlight:hover {
+    background: -webkit-linear-gradient(90deg, #FE6B8B 30%, #FF8E53 90%);
     -webkit-box-shadow: 0px 0px 14px 0px rgba(254,107,139,0.35); 
     box-shadow: 0px 0px 14px 0px rgba(254,107,139,0.35);
-    font-weight: bold;
+    transition-delay: 2s;
 }
