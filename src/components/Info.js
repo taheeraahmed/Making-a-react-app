@@ -42,11 +42,13 @@ export default function Info() {
         <Chip 
             className={classes.chip}
             avatar={<HomeIcon/>} 
-            label="Trondheim/Jessheim" />
+            label="Trondheim/Jessheim"
+            href="https://www.google.com/search?q=Trondheim+jessheim&source=lmns&bih=717&biw=1309&hl=no&sa=X&ved=2ahUKEwjd7Zf4lKzxAhUGzSoKHTjyBXUQ_AUoAHoECAEQAA" clickable  />
         <Chip 
             className={classes.chip}
             avatar={<SchoolIcon/>} 
-            label="Datateknologi, Norges Teknisk og Naturvitenskapelig Universitet" />
+            label="Datateknologi, NTNU" 
+            href="https://www.ntnu.no/studier/mtdt"/>
         <Chip 
             className={classes.chip}
             avatar={<GitHubIcon/>} 
