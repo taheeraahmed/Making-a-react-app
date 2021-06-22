@@ -135,12 +135,20 @@ export default function Navbar() {
                 For øyeblikket studerer jeg <Highlighter word = 'datateknologi'/> på NTNU og begynner i 4.klasse nå til høsten
             </Typography>
             <Typography paragraph = {true}>
-                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren. Derfor bestemte jeg meg for å lage en aldri så liten nettside for å
-                prøve å lære meg hvordan MaterialUI og React faktisk fungerer. Ville sagt jeg delvis
-                skjønner meg litt mer på det
+                Jeg <Highlighter word = 'kjeder meg'/> denne sommeren, og relativt skuffet over at jeg <Highlighter word="ikke fikk noen sommerjobb"/>. DERFOR har jeg
+                tatt saken i egne hender og har laget en liten nettside hvor jeg
+                prøver å lære meg hvordan <Highlighter word="MaterialUI og React"/> faktisk fungerer. Saaamtidig som jeg kan ha et annet sted (enn github) å legge 
+                ut prosjekter jeg gjør.
+            </Typography>
+            <Typography paragraph = {true}>
+              Har lyst til å legge til at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Skal også prøve å lære meg hvordan <Highlighter word="Tensorflow"/> fungerer samt, seaborn (begge er Python bibllioteker). 
+              Python er defintivt favoritten her :,)
             </Typography>
             <Typography paragraph = {true}>
               <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
+            </Typography>
+            <Typography>
+              Dersom du har lyst kan du også sjekke ut vsco-en min :3 
             </Typography>
             
           </Grid>
