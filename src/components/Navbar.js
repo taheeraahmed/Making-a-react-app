@@ -177,10 +177,12 @@ export default function Navbar() {
             
             
           </Grid>
-
-          <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
+          <Grid item xs={12} sm={6} lg={6} >
+            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
               <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
             </Typography>
+          </Grid>
+          
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
