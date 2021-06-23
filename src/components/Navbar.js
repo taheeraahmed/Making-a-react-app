@@ -138,9 +138,6 @@ export default function Navbar() {
                 Jeg har valgt retningen "Databaser og søk", og er veldig spent på hvilke utfordringer jeg får neste semester. 
   
             </Typography>
-            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-            </Typography>
 
           </Grid>
           <Grid item xs={12} sm={6} lg={6} >
@@ -163,24 +160,10 @@ export default function Navbar() {
               data på en fet måte.
               Python er defintivt favoritten her :,)
             </Typography>
-
-            <Typography variant='h3' className={ classes.h3 }>
-              Må finne ut hva mer jeg kan skrive
-            </Typography>
-            <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
-              Vil tilføye at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Jeg har planer om å lage 
-              en deep learning chatbot, dvs. en chatbot som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
-              lære meg hvordan <Highlighter word="Tensorflow"/> fungerer. Og tilslutt men ikke minst se litt på <Highlighter word="seaborn"/>, 
-              for lære meg å visualisere data på en fet måte.
-              Python er defintivt favoritten her :,)
-            </Typography>
-            
-            
-          </Grid>
-          <Grid item xs={12} sm={6} lg={6} >
             <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
               <Highlighter word = 'Obviously'/> synes jeg gradienter er veldig kule. Bruker det på alt her
             </Typography>
+            
           </Grid>
           
         </Grid>
