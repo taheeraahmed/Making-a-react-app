@@ -1,13 +1,21 @@
 
 const Projects = {
-    'RegressionModel': {
+    'Classification': {
+        title: 'Klassifisering av skogtyper',
+        linkName: 'Github Repository',
+        linkPath: 'https://github.com/taheeraahmed/Forest-Type-Cover-Classification/blob/main/CoverType-classification.ipynb',
+        image: 'https://lh3.googleusercontent.com/wXrsOCxdXlGqrwn0buFiFjtfR2YdPmV4UJd3Go3w4wpdcq0fy9et8-EkWoYcLeUDtSIrnkaNLRVn619kmHO-RkOjmPSmeibPR3pOhOlUyrE8mj0-KIpEgEqLHD8yF0-Te4gO0S2GM36K-qX0vPY1KHBfVltliS5khue4puVS9PpzSXOrQy6SgRodb1aPrvuyTX3iYoUq83zqoaxk8u_hofi8aSV95MJ4HhvDLvC-W44Z7Hq3hQjY05p_bLS5bUgxYswdI237f2ksb-ef2261MvtOCM_QCGkDDD5YiKMfTj-0bwjkOOZlMrsiK_3xeN1yL3wosCv2ZYHGJNpLU9P0QxcRQsqnfju_s517rfHzHSvljydyDfboKhRnsTB6UNFFgGUaCUQCldlTvi_DISoFg_hQFuvzHatBYYYeNSya7gl4w52KYH9wA6Obc6HjRzL9wNMNByZPA2it5qiVS_umDw-yaU8IfWdHdLqD6gwcjuq_Ya3JUwy6nWELSPxdNXfzPwV82lSAv_Ywc9Rpg3tYidJL69oLjmFwIfjO70baJLdVpkRqtCaDtt3v3zF442cZGxj6bx2EZaSn-gog72HXL7a9AJKIjyHxWxzMVXdydvOAzqe422Xaj8edjYrbrPNvs-uUHKDz39XRco7WcRt3M459BuloblqTp_OiqDtI43YGEd49GD58FgtU_YQqLvhMbAr4R0MNKtk-yPeelGIhy437TA=w1986-h1268-no?authuser=0',
+        chips: ['Python', 'Kunstig Intelligens', 'TensorFlow/Keras', 'Seaborn','Dyp læring', 'Supervised learning'],
+        description: 'I dette prosjektet lages det en modell som bruker dyp læring for å forutsi skogdekktype (den vanligste typen tredekke) basert på kun kartografiske variabler. Modellen bruker et datasett fra Kaggle for læring. Målet er å klassifisere de seks forskjellige skogdekketypene. Modellen har en accuracy på 85%.' 
+    },
+/*     'RegressionModel': {
         title: 'Regresjonsmodell',
         linkName: 'Github Repository',
         linkPath: 'https://github.com/taheeraahmed/Regression-model',
         image: 'https://machinelearningmastery.com/wp-content/uploads/2013/11/ensemble.png',
         chips: ['Python', 'Kunstig Intelligens', 'TensorFlow/Keras', 'Dyp læring', 'Supervised learning'],
         description: 'Her har jeg brukt en regersjonsmodell på et datasett fra Kaggle. Målet er å finne ut hvorvidt en student kommer inn på høyere utdanning eller ikke, gitt forskjellige attributter som påvirker dette. Den bruker et nevralt nettverk som har to lag. Modellen har en accuracy på 3%. Her kan man også se plots av mean average error og loss etter antall epochs.' 
-    },
+    }, */
     'ChatBot': {
         title: 'Chatbot',
         linkName: 'Github Repository',
