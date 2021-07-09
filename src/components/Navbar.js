@@ -146,7 +146,7 @@ export default function Navbar() {
             </Typography>
             <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
                 Jeg <Highlighter word = 'kjeder meg'/> denne sommeren, og er relativt skuffet over at jeg <Highlighter word="ikke"/> fikk 
-                relevant sommerjobb. DERFOR har jeg tatt saken i egne hender og har laget en liten nettside hvor jeg
+                relevant sommerjobb. DERFOR har jeg tatt saken i egne hender og laget en liten nettside hvor jeg
                 prøver å lære meg hvordan <Highlighter word="MaterialUI"/> og <Highlighter word="React"/> faktisk fungerer. Saaamtidig som jeg kan ha et annet sted (enn github) å legge 
                 ut prosjekter jeg gjør.
             </Typography>
@@ -154,8 +154,8 @@ export default function Navbar() {
               Planer for sommeren
             </Typography>
             <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
-              Vil tilføye at denne nettsiden ikke er det eneste jeg skal gjøre i sommer. Jeg har planer om å lage 
-              en deep learning chatbot, dvs. en chatbot som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
+              Denne nettsiden er ikke det eneste jeg skal lage i sommer. Jeg har planer om å implementere 
+              en <Highligher paragraph = {true} style={{lineHeight: '1.8'}}>deep learning chatbot</Highligher>, dvs. en chatbot som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
               lære meg hvordan <Highlighter word="Tensorflow"/> fungerer. Og tilslutt men ikke minst se litt på <Highlighter word="seaborn"/>, for lære meg å visualisere
               data på en fet måte.
               Python er defintivt favoritten her :,)
@@ -184,7 +184,7 @@ export default function Navbar() {
         </Typography>
         <EntryCV description="Datateknologi er en kombinasjon av programmering, matematikk og kunnskap om teknologiske løsninger 
           innenfor IT. Begynner i 4.klasse til høsten og har valgt hovedprofilen Databaser og Søk"
-          occupationAndPlace = 'Datateknologi, NTNU'
+          occupationAndPlace = 'Datateknologi sivilingeniør, NTNU'
           time='Aug 2017 - Jun 2023'
           image={database}/>
         <EntryCV occupationAndPlace = 'Jessheim Videregående Skole'
