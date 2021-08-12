@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     marginTop: '10px',
     fontSize: 12,
     borderRadius: 10,
-    textTransform: 'inital',
+    textTransform: 'none',
   },
 });
 
