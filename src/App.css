@@ -8,6 +8,10 @@
 @media (max-width : 917px) {
     .visibledevice {
       display:inline-block;
+      width:100%;
+      height: inherit;
+      background: -webkit-linear-gradient(#f86e8c 20%, #ffae83 80%);
+      padding-bottom: 100px;
     }
     .visibledesktop {
       display:none;}

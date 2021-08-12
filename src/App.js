@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Info from './components/Info';
+import LinkTree from './components/LinkTree/LinkTree';
 
 function App() {
   return (
@@ -19,17 +20,7 @@ function App() {
           </footer>
         </div>
         <div class="visibledevice">
-          <header className="headerMobile" >
-            <h1>
-              Taheera Ahmed
-            </h1>
-            <Info/>
-          </header>
-          <main className= "mainMobile">
-            <Navbar/>
-          </main>
-          <footer className="footerMobile">
-          </footer>
+          <LinkTree/>
         </div>
         
       </div>
