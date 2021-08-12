@@ -26,9 +26,9 @@ export default function LinkTree() {
     <div class="bodyLink">
       <div class="headerLink">
       <img src={JustMe} style ={{border: 'double 8px white', borderRadius:3000,}} width="140px" alt="Bare et bilde av meg"/>
-        <h4>
+        <h6>
             Taheera Ahmed
-        </h4>
+        </h6>
         <Button 
           fullWidth = "true"
           size="large"
