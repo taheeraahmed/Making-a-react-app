@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 export default function LinkTree() {
   const classes = useStyles();
   return (
-    <div class="bodyPhone">
+    <div class="bodyLink">
       <div class="headerLink">
       <img src={JustMe} style ={{border: 'double 3px white', borderRadius:3000,}} width="120px" alt="Bare et bilde av meg"/>
         <h4>
@@ -60,5 +60,6 @@ export default function LinkTree() {
         </Button>
       </div>
     </div>
+
   );
 }

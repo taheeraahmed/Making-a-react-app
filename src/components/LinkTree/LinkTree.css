@@ -1,4 +1,4 @@
-.bodyPhone {
+.bodyLink {
     text-align: center;
     width: 100%;
     margin: auto;
@@ -15,5 +15,5 @@ h4 {
     color: white;
     line-height: 1.2;
     text-align: center;
-
+    padding-bottom: 20px;
 }
