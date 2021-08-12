@@ -155,7 +155,7 @@ export default function Navbar() {
             </Typography>
             <Typography paragraph = {true} style={{lineHeight: '1.8'}}>
               Denne nettsiden er ikke det eneste jeg skal lage i sommer. Jeg har planer om å implementere 
-              en <Highligher paragraph = {true} style={{lineHeight: '1.8'}}>deep learning chatbot</Highligher>, dvs. en chatbot som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
+              en en <Highlighter word="chatbot"/> som bruker et nevralt nett for å lære seg å snakke. Jeg vil også
               lære meg hvordan <Highlighter word="Tensorflow"/> fungerer. Og tilslutt men ikke minst se litt på <Highlighter word="seaborn"/>, for lære meg å visualisere
               data på en fet måte.
               Python er defintivt favoritten her :,)
