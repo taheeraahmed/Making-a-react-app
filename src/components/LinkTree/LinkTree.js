@@ -8,7 +8,6 @@ const useStyles = makeStyles({
   root: {
     background: 'transparent',
     border: '1px solid white',
-    borderRadius: 3,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     color: 'white',
     height: 48,
@@ -26,7 +25,7 @@ export default function LinkTree() {
   return (
     <div class="bodyLink">
       <div class="headerLink">
-      <img src={JustMe} style ={{border: 'double 3px white', borderRadius:3000,}} width="120px" alt="Bare et bilde av meg"/>
+      <img src={JustMe} style ={{border: 'double 8px white', borderRadius:3000,}} width="140px" alt="Bare et bilde av meg"/>
         <h4>
             Taheera Ahmed
         </h4>
