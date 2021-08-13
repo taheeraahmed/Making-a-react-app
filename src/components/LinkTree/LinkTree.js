@@ -29,6 +29,7 @@ export default function LinkTree() {
         <h6>
             Taheera Ahmed
         </h6>
+        <p>24 år | Studerer datateknologi på NTNU</p>
         <Button 
           fullWidth = "true"
           size="large"

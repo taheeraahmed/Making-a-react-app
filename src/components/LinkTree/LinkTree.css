@@ -8,6 +8,12 @@
 .headerLink {
     padding: 70px;
 }
+p {
+    font-size: 12pt;
+    color: white;
+    line-height: 0.8;
+    opacity: 85%;
+}
 
 h6 {
     font-size:30px;
@@ -15,5 +21,4 @@ h6 {
     color: white;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 20px;
 }
