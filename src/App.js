@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Info from './components/Info';
 import LinkTree from './components/LinkTree/LinkTree';
+import Typography from 'material-ui/styles/typography';
 
 function App() {
   return (
@@ -20,7 +21,12 @@ function App() {
           </footer>
         </div>
         <div class="visibledevice">
+
           <LinkTree/>
+          <div class="footerDevice">
+            Liten heads-up: Du ser på mobilversjonen av nettsiden. 
+            Dersom du ønsker å se hele nettsiden må du bruke en enhet med større skjerm
+          </div>
         </div>
         
       </div>

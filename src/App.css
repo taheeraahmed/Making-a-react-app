@@ -35,6 +35,13 @@
 .footer {
   height:3rem;
 }
+.footerDevice{
+  color:white;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-size: 10pt;
+  opacity: 50%;
+}
 
 h1 {
   font-size: 72px;
