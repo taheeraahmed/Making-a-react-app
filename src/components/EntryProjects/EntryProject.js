@@ -58,7 +58,7 @@ export default class EntryProject extends React.Component{
                                 </Typography>
                             </Link>
                             <Typography variant ="body2" paragraph={true}>
-                            <Box display='flex'
+                                <Box display='flex'
                                     flexWrap="wrap"
                                     alignContent="flex-start">
                                     {listChips}
