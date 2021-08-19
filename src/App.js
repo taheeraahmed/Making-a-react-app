@@ -25,6 +25,7 @@ function App() {
           <div class="footerDevice">
             Liten heads-up: Du ser på mobilversjonen av nettsiden. 
             Dersom du ønsker å se hele nettsiden må du bruke en enhet med større skjerm
+            Cool bye :3
           </div>
         </div>
         
