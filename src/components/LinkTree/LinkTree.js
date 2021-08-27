@@ -28,8 +28,8 @@ export default function LinkTree() {
       <img src={JustMe} style ={{border: 'double 8px white', borderRadius:3000,}} width="140px" alt="Bare et bilde av meg"/>
         <h6>
             Taheera Ahmed
+            <p>24 år | Studerer datateknologi på NTNU</p>
         </h6>
-        <p>24 år | Studerer datateknologi på NTNU</p>
         <Button 
           fullWidth = "true"
           size="large"
