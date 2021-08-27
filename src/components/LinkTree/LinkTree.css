@@ -12,6 +12,10 @@
     line-height: 0.8;
 
 }
+.headerLink p{
+    opacity: 90%;
+    font-size: 70%;
+}
 
 h6 {
     font-size:30px;
