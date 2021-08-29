@@ -1,0 +1,10 @@
+.IconHolder {
+    text-align: center;
+    font-weight: lighter;
+    width: 100px;
+    padding: 10px 20px 30px 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.6);
+}

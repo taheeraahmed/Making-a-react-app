@@ -2,3 +2,10 @@
     font-size: 40pt;
     font-weight: lighter;
 }
+.Icons {
+    display: flex;
+}
+.Icons a{
+    color: black;
+    font-weight: lighter;
+}
