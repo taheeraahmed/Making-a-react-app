@@ -22,7 +22,7 @@ export class ProjectList extends React.Component{
           chips={item.chips}
         />
         )
-    };
+    }
     return (
       <div>
         {project_list}

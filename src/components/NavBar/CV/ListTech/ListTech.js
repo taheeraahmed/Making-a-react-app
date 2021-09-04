@@ -41,7 +41,7 @@ const list = [
     '... har også lyst til å lære meg mer'
 ];
 
-export default function ListTech2() {
+export default function ListTech() {
     const classes = useStyles();
 
     const listItems = list.map((item) =>(
