@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import JustMe from '../../images/pb.jpg';
+import JustMe from '../../../images/pb.jpg';
 import './LinkTree.css';
 
 const useStyles = makeStyles({
@@ -23,8 +23,8 @@ const useStyles = makeStyles({
 export default function LinkTree() {
   const classes = useStyles();
   return (
-    <div class="bodyLink">
-      <div class="headerLink">
+    <div className="bodyLink">
+      <div className="headerLink">
       <img src={JustMe} style ={{border: 'double 8px white', borderRadius:3000,}} width="140px" alt="Bare et bilde av meg"/>
         <h6>
             Taheera Ahmed

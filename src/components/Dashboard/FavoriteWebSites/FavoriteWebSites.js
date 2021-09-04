@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './FavoriteWebSites.css';
-import Instabart from './images/instabart.png';
 import Instagram from './images/instagram.svg'
 import Netflix from './images/netflix.svg';
 import Blackboard from './images/blackboard.svg'
