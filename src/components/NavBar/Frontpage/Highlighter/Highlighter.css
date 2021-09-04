@@ -12,7 +12,7 @@
 
 .highlight:hover {
     background: -webkit-linear-gradient(90deg, #FE6B8B 30%, #FF8E53 90%);
-    -webkit-box-shadow: 0px 0px 14px 0px rgba(254,107,139,0.35); 
-    box-shadow: 0px 0px 14px 0px rgba(254,107,139,0.35);
+    -webkit-box-shadow: 0 0 14px 0 rgba(254,107,139,0.35);
+    box-shadow: 0 0 14px 0 rgba(254,107,139,0.35);
     transition-delay: 2s;
 }
