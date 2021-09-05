@@ -75,8 +75,6 @@ const useStyles = makeStyles({
   }
 });
 
-
-
 export default function Navbar() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
