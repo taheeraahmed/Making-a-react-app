@@ -5,3 +5,20 @@
 .image {
     text-align: center;
 }
+.imageContainer {
+    text-align: center;
+}
+.imageContainer button {
+    display: inline;
+    background: -webkit-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    padding: 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0;
+    -webkit-box-shadow: 0 0 14px 0 rgba(254,107,139,0.35);
+    box-shadow: 0 0 14px 0 rgba(254,107,139,0.35);
+}
+.imageContainer button:hover {
+    background: -webkit-linear-gradient(90deg, #FE6B8B 30%, #FF8E53 90%);
+}

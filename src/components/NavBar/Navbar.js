@@ -116,7 +116,7 @@ export default function Navbar() {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Typography variant="h2" paragraph = {true}>
-          Fordi jeg kan
+          Random memes
         </Typography>
         <Typography>
           <ImageGenerator/>
