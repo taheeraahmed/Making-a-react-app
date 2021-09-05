@@ -64,7 +64,7 @@ export default class EntryProject extends React.Component{
                                     {listChips}
                                 </Box>
                             </Typography>
-                            <Typography variant ="body">
+                            <Typography variant ="body1">
                                 {this.props.description}
                             </Typography>
                         </Grid>

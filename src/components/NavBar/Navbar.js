@@ -9,6 +9,7 @@ import Box from '@material-ui/core/Box';
 import { ProjectList } from './Projects/ProjectList.js'
 import {FrontPage} from "./Frontpage/Frontpage";
 import {CV} from "./CV/CV";
+import ImageGenerator from "./Because/ImageGenerator";
 
 
 function TabPanel(props) {
@@ -115,10 +116,10 @@ export default function Navbar() {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Typography variant="h2" paragraph = {true}>
-          Fordi jeg kan
+          Random memes
         </Typography>
         <Typography>
-          Her vil jeg legge inn morsomme ting 
+          <ImageGenerator/>
         </Typography>
       </TabPanel>
     </div>
