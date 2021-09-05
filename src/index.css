@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background-color: #ddfff7;
+  background: radial-gradient(ellipse at top, #DDFFF7 , #caf6e9 60%, #b2e7da);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
