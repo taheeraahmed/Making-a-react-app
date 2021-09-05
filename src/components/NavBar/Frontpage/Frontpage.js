@@ -27,7 +27,7 @@ export const FrontPage = () => {
               style ={{paddingTop: '23px', paddingRight:'10px'}}
               direction="row"
               justify="center"
-              classname={classes.grid}>
+              className={classes.grid}>
             <Grid item xs={12} sm={6} lg={6} >
                 <div className="image" style={{textAlign: "center"}}>
                     <img src={JustMe} style ={{border: 'double 6px transparent', marginBottom: 20, backgroundRepeat: 'no',background: "linear-gradient(#FE6B8B 30%, #FF8E53 90%)",boxShadow: '0 1px 7px 3px rgba(255, 105, 135, .3)',}} width="60%" alt="Bare et bilde av meg"/>
