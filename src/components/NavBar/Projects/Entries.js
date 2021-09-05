@@ -1,5 +1,13 @@
 
 const Projects = {
+    'Denne nettsiden :))': {
+        title: 'Denne nettsiden :))',
+        linkName: 'taheera.no',
+        linkPath: 'https://taheera.no',
+        image: 'https://memegenerator.net/img/instances/30943145.jpg',
+        chips: ['React', 'JavaScript', 'Netlify', 'Webutvikling', 'Front-end', 'Material-UI'],
+        description: ['Kost meg med å lage en React-app. Brukt noen Material-UI komponenter, men har laget de fleste selv. ']
+    },
     'Classification': {
         title: 'Klassifisering av skogtyper',
         linkName: 'Github Repository',

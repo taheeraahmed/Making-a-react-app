@@ -115,7 +115,7 @@ export default function Navbar() {
           <ProjectList/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Typography variant="h2" paragraph = {true}>
+        <Typography variant="h2">
           Random memes
         </Typography>
         <Typography>

@@ -28,7 +28,7 @@ const ImageGenerator = () => {
             <div className="image">
                 <img src={image} alt="Meme"/>
             </div>
-            <button onClick={e => handleClick()}>Trykk her</button>
+            <button onClick={() => handleClick()}>Trykk her</button>
         </div>
     );
 };
