@@ -10,11 +10,13 @@
 }
 .imageContainer button {
     display: inline;
-    background: -webkit-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
-    padding: 10px;
+    width: 50%;
+    background: -webkit-linear-gradient(91deg, #FE6B8B 30%, #FF8E53 90%);
+    padding: 20px;
+    font-size: 20pt;
     border-radius: 6px;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: lighter;
     border: 0;
     -webkit-box-shadow: 0 0 14px 0 rgba(254,107,139,0.35);
     box-shadow: 0 0 14px 0 rgba(254,107,139,0.35);
